@@ -111,7 +111,28 @@
                 0 0 10px 4px rgba(237, 142, 19, 0.6);
         }
 
-        .earth {}
+        .earth {
+            position: relative;
+            top: 215px;
+            left: 175px;
+            height: 95px;
+            width: 95px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, #1186d8, #1185d896, #1185d85f);
+            box-shadow: inset 0 0 10px 50px #1185d86b,
+                0 0 10px 4px #1185d86b;
+        }
+
+        .continents {
+            position: absolute;
+            top: 5px;
+            left: -5px;
+            height: 120%;
+            width: 125%;
+            clip-path: polygon(30% 0%, 60% 3%, 70% 20%, 40% 35%, 55% 50%, 60px 70%, 40% 80%, 30% 65%, 20% 50%, 30% 35%);
+            background: radial-gradient(ellipse at 50% 50%, #ed8e13c0, #57b9014f, #f38f0e8f);
+            box-shadow: inset 0 0 10px 50px #ad640449;
+        }
     </style>
 </head>
 
@@ -119,7 +140,9 @@
     <div class="sun"></div>
     <div class="mercury"></div>
     <div class="venus"></div>
-    <div class="earth"></div>
+    <div class="earth">
+        <div class="continents"></div>
+    </div>
 </body>
 
 </html>
