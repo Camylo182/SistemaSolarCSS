@@ -153,9 +153,22 @@
             height: 145px;
             width: 145px;
             border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, #c18d40f6, #b06f0d92, #25160092);
+
+        }
+
+        .jupiter::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 145px;
+            width: 145px;
+            border-radius: 50%;
             background: linear-gradient(to bottom, #905803f6 10%, #eae3dac7 15%, #905803f6 30%, #905803f6 50%, #eae3dac7 60%, #905803f6 70%, #905803f6 80%, #eae3dac7 90%, #905803f6);
             box-shadow: inset 0 0 10px 2px #905803f6,
                 0 0 10px 1px #905803f6;
+            z-index: -1;
         }
     </style>
 </head>
@@ -169,6 +182,7 @@
     </div>
     <div class="mars"></div>
     <div class="jupiter"></div>
+    <div class="saturn"></div>
 </body>
 
 </html>
