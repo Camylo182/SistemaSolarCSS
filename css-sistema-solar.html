@@ -170,6 +170,43 @@
                 0 0 10px 1px #905803f6;
             z-index: -1;
         }
+
+        .saturn {
+            position: relative;
+            top: 200px;
+            left: 250px;
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, #d8cbb6f6, #ac936df6, #5d5242f6);
+            box-shadow: ;
+        }
+
+        .saturn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50px;
+            width: 240px;
+            background: radial-gradient(ellipse at center, transparent 10%, #795b33);
+            border-radius: 50%;
+            transform: translate(-50%, -30%) rotateX(65deg) rotateY(45deg);
+            z-index: 1;
+        }
+
+        .saturn::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 55px;
+            width: 310px;
+            background: radial-gradient(ellipse at center, transparent 10%, #644b28);
+            border-radius: 50%;
+            transform: translate(-50%, -30%) rotateX(65deg) rotateY(45deg);
+            z-index: -2;
+        }
     </style>
 </head>
 
