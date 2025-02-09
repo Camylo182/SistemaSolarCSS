@@ -219,6 +219,29 @@
             background: radial-gradient(circle at center, #4abfb5, #1b847b, #063430);
             box-shadow: 0 0 10px 2px #063430;
         }
+
+        .neptune {
+            position: relative;
+            top: 258px;
+            left: 315px;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, #5c5ccd, #3030a3, #0b0b5e);
+            box-shadow: 0 0 10px 4px #0b0b5e;
+        }
+
+        .neptune::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #77b7ff2c 30%, #a7d1fe48, #2749f225 70%);
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -233,6 +256,7 @@
     <div class="jupiter"></div>
     <div class="saturn"></div>
     <div class="uranus"></div>
+    <div class="neptune"></div>
 </body>
 
 </html>
